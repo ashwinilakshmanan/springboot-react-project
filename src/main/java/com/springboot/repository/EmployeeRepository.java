@@ -8,6 +8,7 @@ import com.springboot.model.Employee;
 @Repository
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
-
+	
 	//all crud database methods
+//	Employee findById(long id);
 }
