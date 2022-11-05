@@ -52,21 +52,6 @@ public class EmployeeController {
 	
 	//build update employee REST API
 	
-//	@PutMapping("{id}")
-//	public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long id,
-//			@Validated @RequestBody Employee employeeDetails) throws ResourceNotFoundException{
-//		
-//		Employee updateEmployee = employeeRepository.findById(id)
-//				.orElseThrow(()-> new ResourceNotFoundException("Employee not found for this id::" +id));
-//				
-//		
-//		updateEmployee.setFirstName(employeeDetails.getFirstName());
-//		updateEmployee.setLastName(employeeDetails.getLastName());
-//		updateEmployee.setEmail(employeeDetails.getEmail());
-//			
-//			return ResponseEntity.ok(this.employeeRepository.save(updateEmployee));
-//	}
-	
 	@PutMapping("{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable long id,@RequestBody Employee employeeDetails) throws ResourceNotFoundException 
 			{
